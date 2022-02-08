@@ -12,15 +12,15 @@ namespace Model
 
         public string Nome { get; set; }
 
-        public string Nascimento { get; set; }
+        public DateTime Data_Nascimento { get; set; }
 
         public string RG { get; set; }
 
-        public string CPF { get; set; }
+        public int CPF { get; set; }
 
         public string Curso { get; set; }
 
-        public string Ano { get; set; }
+        public DateTime Ano { get; set; }
 
         public string Turno { get; set; }
 
