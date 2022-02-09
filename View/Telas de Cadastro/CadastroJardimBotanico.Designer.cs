@@ -72,7 +72,6 @@
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -560,7 +559,7 @@
             this.txtCarregar.ForeColor = System.Drawing.Color.White;
             this.txtCarregar.HoverState.Parent = this.txtCarregar;
             this.txtCarregar.Image = global::View.Properties.Resources.carregando;
-            this.txtCarregar.Location = new System.Drawing.Point(1063, 341);
+            this.txtCarregar.Location = new System.Drawing.Point(1062, 278);
             this.txtCarregar.Margin = new System.Windows.Forms.Padding(4);
             this.txtCarregar.Name = "txtCarregar";
             this.txtCarregar.ShadowDecoration.Parent = this.txtCarregar;
@@ -635,28 +634,6 @@
             this.guna2Button6.TabIndex = 14;
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
-            // guna2Button5
-            // 
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.DisabledState.Parent = this.guna2Button5;
-            this.guna2Button5.FillColor = System.Drawing.Color.Silver;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Image = global::View.Properties.Resources.selecione;
-            this.guna2Button5.Location = new System.Drawing.Point(1063, 278);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(141, 55);
-            this.guna2Button5.TabIndex = 6;
-            this.guna2Button5.Text = "Todos";
-            // 
             // guna2Button1
             // 
             this.guna2Button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -702,6 +679,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(141, 55);
             this.guna2Button2.TabIndex = 3;
             this.guna2Button2.Text = "Alterar";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button4
             // 
@@ -724,6 +702,7 @@
             this.guna2Button4.Size = new System.Drawing.Size(141, 55);
             this.guna2Button4.TabIndex = 5;
             this.guna2Button4.Text = "+Novo";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Button3
             // 
@@ -746,6 +725,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(141, 55);
             this.guna2Button3.TabIndex = 4;
             this.guna2Button3.Text = "Excluir";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // CadastroJardimBotanico
             // 
@@ -765,7 +745,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button4);
@@ -821,7 +800,6 @@
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
