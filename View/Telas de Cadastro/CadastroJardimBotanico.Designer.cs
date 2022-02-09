@@ -36,6 +36,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtAno = new System.Windows.Forms.MaskedTextBox();
             this.txtNascimento = new System.Windows.Forms.MaskedTextBox();
@@ -64,14 +65,13 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtBuscaAluno = new System.Windows.Forms.TextBox();
+            this.txtBuscaContrato = new System.Windows.Forms.TextBox();
+            this.txtBuscaCPF = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCarregar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -81,9 +81,9 @@
             this.tabPage1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -173,7 +173,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
             this.richTextBox1.Size = new System.Drawing.Size(813, 141);
-            this.richTextBox1.TabIndex = 7;
+            this.richTextBox1.TabIndex = 11;
             this.richTextBox1.Text = "";
             // 
             // label11
@@ -198,6 +198,15 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "FOTO ALUNO";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(8, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(192, 183);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
@@ -236,7 +245,7 @@
             this.txtAno.Mask = "00/00/0000";
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(190, 22);
-            this.txtAno.TabIndex = 21;
+            this.txtAno.TabIndex = 7;
             this.txtAno.ValidatingType = typeof(System.DateTime);
             // 
             // txtNascimento
@@ -246,7 +255,7 @@
             this.txtNascimento.Mask = "00/00/0000";
             this.txtNascimento.Name = "txtNascimento";
             this.txtNascimento.Size = new System.Drawing.Size(221, 22);
-            this.txtNascimento.TabIndex = 20;
+            this.txtNascimento.TabIndex = 3;
             this.txtNascimento.ValidatingType = typeof(System.DateTime);
             // 
             // maskedTextBox4
@@ -256,7 +265,7 @@
             this.maskedTextBox4.Mask = "00/00/0000";
             this.maskedTextBox4.Name = "maskedTextBox4";
             this.maskedTextBox4.Size = new System.Drawing.Size(189, 22);
-            this.maskedTextBox4.TabIndex = 19;
+            this.maskedTextBox4.TabIndex = 10;
             this.maskedTextBox4.ValidatingType = typeof(System.DateTime);
             // 
             // maskedTextBox3
@@ -266,7 +275,7 @@
             this.maskedTextBox3.Mask = "00/00/0000";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(189, 22);
-            this.maskedTextBox3.TabIndex = 18;
+            this.maskedTextBox3.TabIndex = 9;
             this.maskedTextBox3.ValidatingType = typeof(System.DateTime);
             // 
             // label10
@@ -285,7 +294,7 @@
             this.txtTurno.Margin = new System.Windows.Forms.Padding(4);
             this.txtTurno.Name = "txtTurno";
             this.txtTurno.Size = new System.Drawing.Size(189, 22);
-            this.txtTurno.TabIndex = 16;
+            this.txtTurno.TabIndex = 8;
             // 
             // txtCurso
             // 
@@ -293,7 +302,7 @@
             this.txtCurso.Margin = new System.Windows.Forms.Padding(4);
             this.txtCurso.Name = "txtCurso";
             this.txtCurso.Size = new System.Drawing.Size(189, 22);
-            this.txtCurso.TabIndex = 14;
+            this.txtCurso.TabIndex = 6;
             // 
             // label9
             // 
@@ -343,7 +352,7 @@
             this.txtCPF.Mask = "0000000000000";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(221, 22);
-            this.txtCPF.TabIndex = 9;
+            this.txtCPF.TabIndex = 5;
             // 
             // txtRG
             // 
@@ -352,7 +361,7 @@
             this.txtRG.Mask = "99.999.999-0";
             this.txtRG.Name = "txtRG";
             this.txtRG.Size = new System.Drawing.Size(221, 22);
-            this.txtRG.TabIndex = 8;
+            this.txtRG.TabIndex = 4;
             // 
             // txtNome
             // 
@@ -360,7 +369,7 @@
             this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(221, 22);
-            this.txtNome.TabIndex = 6;
+            this.txtNome.TabIndex = 2;
             // 
             // txtContrato
             // 
@@ -368,7 +377,7 @@
             this.txtContrato.Margin = new System.Windows.Forms.Padding(4);
             this.txtContrato.Name = "txtContrato";
             this.txtContrato.Size = new System.Drawing.Size(221, 22);
-            this.txtContrato.TabIndex = 5;
+            this.txtContrato.TabIndex = 1;
             // 
             // label5
             // 
@@ -494,47 +503,47 @@
             this.label14.TabIndex = 10;
             this.label14.Text = "BUSCA POR CPF:";
             // 
-            // textBox7
+            // txtBuscaAluno
             // 
-            this.textBox7.Location = new System.Drawing.Point(4, 666);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(412, 35);
-            this.textBox7.TabIndex = 11;
+            this.txtBuscaAluno.Location = new System.Drawing.Point(4, 666);
+            this.txtBuscaAluno.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBuscaAluno.Multiline = true;
+            this.txtBuscaAluno.Name = "txtBuscaAluno";
+            this.txtBuscaAluno.Size = new System.Drawing.Size(412, 35);
+            this.txtBuscaAluno.TabIndex = 11;
             // 
-            // textBox9
+            // txtBuscaContrato
             // 
-            this.textBox9.Location = new System.Drawing.Point(813, 666);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(335, 35);
-            this.textBox9.TabIndex = 13;
+            this.txtBuscaContrato.Location = new System.Drawing.Point(813, 666);
+            this.txtBuscaContrato.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBuscaContrato.Multiline = true;
+            this.txtBuscaContrato.Name = "txtBuscaContrato";
+            this.txtBuscaContrato.Size = new System.Drawing.Size(335, 35);
+            this.txtBuscaContrato.TabIndex = 13;
             // 
-            // guna2TextBox1
+            // txtBuscaCPF
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "\r\n";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(487, 666);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(267, 36);
-            this.guna2TextBox1.TabIndex = 17;
+            this.txtBuscaCPF.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscaCPF.DefaultText = "\r\n";
+            this.txtBuscaCPF.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBuscaCPF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBuscaCPF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBuscaCPF.DisabledState.Parent = this.txtBuscaCPF;
+            this.txtBuscaCPF.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBuscaCPF.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBuscaCPF.FocusedState.Parent = this.txtBuscaCPF;
+            this.txtBuscaCPF.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBuscaCPF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBuscaCPF.HoverState.Parent = this.txtBuscaCPF;
+            this.txtBuscaCPF.Location = new System.Drawing.Point(487, 666);
+            this.txtBuscaCPF.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBuscaCPF.Name = "txtBuscaCPF";
+            this.txtBuscaCPF.PasswordChar = '\0';
+            this.txtBuscaCPF.PlaceholderText = "";
+            this.txtBuscaCPF.SelectedText = "";
+            this.txtBuscaCPF.ShadowDecoration.Parent = this.txtBuscaCPF;
+            this.txtBuscaCPF.Size = new System.Drawing.Size(267, 36);
+            this.txtBuscaCPF.TabIndex = 17;
             // 
             // txtCarregar
             // 
@@ -580,6 +589,7 @@
             this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
             this.guna2Button8.Size = new System.Drawing.Size(43, 36);
             this.guna2Button8.TabIndex = 16;
+            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
             // 
             // guna2Button7
             // 
@@ -601,6 +611,7 @@
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
             this.guna2Button7.Size = new System.Drawing.Size(40, 36);
             this.guna2Button7.TabIndex = 15;
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // guna2Button6
             // 
@@ -622,15 +633,7 @@
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
             this.guna2Button6.Size = new System.Drawing.Size(40, 36);
             this.guna2Button6.TabIndex = 14;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(8, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(192, 183);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // guna2Button5
             // 
@@ -751,12 +754,12 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1216, 745);
             this.Controls.Add(this.txtCarregar);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txtBuscaCPF);
             this.Controls.Add(this.guna2Button8);
             this.Controls.Add(this.guna2Button7);
             this.Controls.Add(this.guna2Button6);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtBuscaContrato);
+            this.Controls.Add(this.txtBuscaAluno);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -777,10 +780,10 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -827,12 +830,12 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtBuscaAluno;
+        private System.Windows.Forms.TextBox txtBuscaContrato;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtBuscaCPF;
         private System.Windows.Forms.MaskedTextBox txtNascimento;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MaskedTextBox txtAno;

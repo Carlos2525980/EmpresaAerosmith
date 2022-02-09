@@ -36,31 +36,19 @@ namespace View.Telas_de_Cadastro
             {
                 //FAZENDO A CONEXAO ENTRE INSTANCIA, BANCO DE DADOS.
                 conexao = new SqlConnection(@"Data Source=DESKTOP-JQ2VDHB;Initial Catalog=SistemaAerosmith;Persist Security Info=True;User ID=sa;Password=123456;TrustServerCertificate=True");
-
-
+                
                 //inserindo DADOS no banco de dados na tabela CAD_CLIENTE
-                strSQL = "INSERT INTO CADASTROJARDIMBOTANICO(ALUNO, CONTRATO_N, DATA_NASCIMENTO, CPF, CURSO, ANO, TURNO) VALUES (@ALUNO, @CONTRATO_N, @DATA_NASCIMENTO, @CPF, @CURSO, @ANO, @TURNO)";
-
+                strSQL = "INSERT INTO CADASTROJARDIMBOTANICO(CONTRATO_N, ALUNO, DATA_NASCIMENTO, CPF, CURSO, ANO, TURNO) VALUES (@CONTRATO_N, @ALUNO, @DATA_NASCIMENTO, @CPF, @CURSO, @ANO, @TURNO)";
+                
                 //INSTANCIA A PRORPRIEDADE SQLCOMAND, SETANDO O CAMPOS DA TABELA COM OS TEXTBOX DA INTERFACE
-
                 comando = new SqlCommand(strSQL, conexao);
-
-                comando.Parameters.AddWithValue("@ALUNO", txtNome.Text);
                 comando.Parameters.AddWithValue("@CONTRATO_N", txtContrato.Text);
+                comando.Parameters.AddWithValue("@ALUNO", txtNome.Text);
                 comando.Parameters.AddWithValue("@DATA_NASCIMENTO", txtNascimento.Text);
                 comando.Parameters.AddWithValue("@CPF", txtCPF.Text);
                 comando.Parameters.AddWithValue("@CURSO", txtCurso.Text);
                 comando.Parameters.AddWithValue("@ANO", txtAno.Text);
                 comando.Parameters.AddWithValue("@TURNO", txtTurno.Text);
-
-                //dataGridView1.ColumnCount = 7;
-                //dataGridView1.Columns[0].Name = "Contrato";
-                //dataGridView1.Columns[1].Name = "Nome";
-                //dataGridView1.Columns[2].Name = "Nascimento";
-                //dataGridView1.Columns[3].Name = "CPF";
-                //dataGridView1.Columns[4].Name = "Curso";
-                //dataGridView1.Columns[5].Name = "Ano";
-                //dataGridView1.Columns[6].Name = "Turno";
 
                 //ABRINDO CONEXAO
                 conexao.Open();
@@ -68,17 +56,12 @@ namespace View.Telas_de_Cadastro
 
                 MessageBox.Show("Inserido com sucesso!");
             }
-            catch (Exception ex)
-            {
-
+            catch (Exception ex){
                 // SE DER ALGUM ERRO ESSA MENSAGEM DE ERRO SERÁ ATIVADA.
                 MessageBox.Show(ex.Message);
-
-
             }
             finally
             {
-
                 //FECHANDO A CONEXAO
                 conexao.Close();
                 comando.Clone();
@@ -132,6 +115,184 @@ namespace View.Telas_de_Cadastro
                 comando = null;
             }
 
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+
+
+            try
+            {
+                //FAZENDO A CONEXAO ENTRE INSTANCIA, BANCO DE DADOS.
+                conexao = new SqlConnection(@"Data Source=DESKTOP-JQ2VDHB;Initial Catalog=SistemaAerosmith;Persist Security Info=True;User ID=sa;Password=123456;TrustServerCertificate=True");
+
+
+                //Faz um consulta pelo nome do aluno
+                strSQL = "SELECT * FROM CADASTROJARDIMBOTANICO WHERE ALUNO = @ALUNO";
+
+                //INSTANCIA A PRORPRIEDADE SQLCOMAND, SETANDO O CAMPO ID da interface com o campo id do banco de dados
+
+                comando = new SqlCommand(strSQL, conexao);
+                comando.Parameters.AddWithValue("@ALUNO", txtBuscaAluno.Text);
+
+                //abre a conexao
+                conexao.Open();
+
+                //instancia o datareader
+                dr = comando.ExecuteReader();
+
+
+                //faz o loop para varrer os campos para trazer as informaçoes da tabela
+                while (dr.Read())
+                {
+                    txtContrato.Text = Convert.ToString(dr["contrato_n"]);
+                    txtNome.Text = (string)dr["aluno"];
+                    txtNascimento.Text = Convert.ToString(dr["data_nascimento"]);
+                    txtCPF.Text = (string)dr["cpf"];
+                    txtCurso.Text = (string)dr["curso"];
+                    txtAno.Text = Convert.ToString(dr["ano"]);
+                    txtTurno.Text = (string)dr["turno"];
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                // SE DER ALGUM ERRO ESSA MENSAGEM DE ERRO SERÁ ATIVADA.
+                MessageBox.Show(ex.Message);
+
+
+            }
+            finally
+            {
+
+                //FECHANDO A CONEXAO
+                conexao.Close();
+                comando.Clone();
+                conexao = null;
+                comando = null;
+            }
+
+
+
+
+
+
+
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //FAZENDO A CONEXAO ENTRE INSTANCIA, BANCO DE DADOS.
+                conexao = new SqlConnection(@"Data Source=DESKTOP-JQ2VDHB;Initial Catalog=SistemaAerosmith;Persist Security Info=True;User ID=sa;Password=123456;TrustServerCertificate=True");
+
+
+                //Faz um consulta pelo cpf
+                strSQL = "SELECT * FROM CADASTROJARDIMBOTANICO WHERE CPF = @CPF";
+
+                //INSTANCIA A PRORPRIEDADE SQLCOMAND, SETANDO O CAMPO ID da interface com o campo id do banco de dados
+
+                comando = new SqlCommand(strSQL, conexao);
+                comando.Parameters.AddWithValue("@CPF", txtBuscaCPF.Text);
+
+                //abre a conexao
+                conexao.Open();
+
+                //instancia o datareader
+                dr = comando.ExecuteReader();
+
+
+                //faz o loop para varrer os campos para trazer as informaçoes da tabela
+                while (dr.Read())
+                {
+                    
+                    txtContrato.Text = Convert.ToString(dr["contrato_n"]);
+                    txtNome.Text = (string)dr["aluno"];
+                    txtNascimento.Text = Convert.ToString(dr["data_nascimento"]);
+                    txtCPF.Text = Convert.ToString(dr["cpf"]);
+                    txtCurso.Text = (string)dr["curso"];
+                    txtAno.Text = Convert.ToString(dr["ano"]);
+                    txtTurno.Text = (string)dr["turno"];
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                // SE DER ALGUM ERRO ESSA MENSAGEM DE ERRO SERÁ ATIVADA.
+                MessageBox.Show(ex.Message);
+
+
+            }
+            finally
+            {
+
+                //FECHANDO A CONEXAO
+                conexao.Close();
+                comando.Clone();
+                conexao = null;
+                comando = null;
+            }
+
+
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //FAZENDO A CONEXAO ENTRE INSTANCIA, BANCO DE DADOS.
+                conexao = new SqlConnection(@"Data Source=DESKTOP-JQ2VDHB;Initial Catalog=SistemaAerosmith;Persist Security Info=True;User ID=sa;Password=123456;TrustServerCertificate=True");
+
+
+                //Faz um consulta pelo cpf
+                strSQL = "SELECT * FROM CADASTROJARDIMBOTANICO WHERE CONTRATO_N = @CONTRATO_N";
+
+                //INSTANCIA A PRORPRIEDADE SQLCOMAND, SETANDO O CAMPO ID da interface com o campo id do banco de dados
+
+                comando = new SqlCommand(strSQL, conexao);
+                comando.Parameters.AddWithValue("@CONTRATO_N", txtBuscaContrato.Text);
+
+                //abre a conexao
+                conexao.Open();
+
+                //instancia o datareader
+                dr = comando.ExecuteReader();
+
+
+                //faz o loop para varrer os campos para trazer as informaçoes da tabela
+                while (dr.Read())
+                {
+
+                    txtContrato.Text = Convert.ToString(dr["contrato_n"]);
+                    txtNome.Text = (string)dr["aluno"];
+                    txtNascimento.Text = Convert.ToString(dr["data_nascimento"]);
+                    txtCPF.Text = (string)dr["cpf"];
+                    txtCurso.Text = (string)dr["curso"];
+                    txtAno.Text = Convert.ToString(dr["ano"]);
+                    txtTurno.Text = (string)dr["turno"];
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                // SE DER ALGUM ERRO ESSA MENSAGEM DE ERRO SERÁ ATIVADA.
+                MessageBox.Show(ex.Message);
+
+
+            }
+            finally
+            {
+
+                //FECHANDO A CONEXAO
+                conexao.Close();
+                comando.Clone();
+                conexao = null;
+                comando = null;
+            }
         }
     }
 }
