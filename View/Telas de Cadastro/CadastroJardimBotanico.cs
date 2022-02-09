@@ -4,11 +4,15 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
+using System.Drawing.Imaging;
+using System.Drawing.Configuration;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//using System.Drawing.Bitmap;
+
 
 namespace View.Telas_de_Cadastro
 {
@@ -23,24 +27,18 @@ namespace View.Telas_de_Cadastro
         {
             InitializeComponent();
         }
-
-        List<Aluno> lista = new List<Aluno>();
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             try
             {
                 //FAZENDO A CONEXAO ENTRE INSTANCIA, BANCO DE DADOS.
                 conexao = new SqlConnection(@"Data Source=DESKTOP-JQ2VDHB;Initial Catalog=SistemaAerosmith;Persist Security Info=True;User ID=sa;Password=123456;TrustServerCertificate=True");
-                
+
                 //inserindo DADOS no banco de dados na tabela CAD_CLIENTE
-                strSQL = "INSERT INTO CADASTROJARDIMBOTANICO(CONTRATO_N, ALUNO, DATA_NASCIMENTO, CPF, CURSO, ANO, TURNO) VALUES (@CONTRATO_N, @ALUNO, @DATA_NASCIMENTO, @CPF, @CURSO, @ANO, @TURNO)";
-                
+                strSQL = "INSERT INTO CADASTROJARDIMBOTANICO(CONTRATO_N, ALUNO, DATA_NASCIMENTO, CPF, CURSO, ANO, TURNO ) VALUES (@CONTRATO_N, @ALUNO, @DATA_NASCIMENTO, @CPF, @CURSO, @ANO, @TURNO)";
+
                 //INSTANCIA A PRORPRIEDADE SQLCOMAND, SETANDO O CAMPOS DA TABELA COM OS TEXTBOX DA INTERFACE
+
                 comando = new SqlCommand(strSQL, conexao);
                 comando.Parameters.AddWithValue("@CONTRATO_N", txtContrato.Text);
                 comando.Parameters.AddWithValue("@ALUNO", txtNome.Text);
@@ -56,7 +54,7 @@ namespace View.Telas_de_Cadastro
 
                 MessageBox.Show("Inserido com sucesso!");
             }
-            catch (Exception ex){
+            catch (Exception ex) {
                 // SE DER ALGUM ERRO ESSA MENSAGEM DE ERRO SERÁ ATIVADA.
                 MessageBox.Show(ex.Message);
             }
@@ -157,11 +155,8 @@ namespace View.Telas_de_Cadastro
             }
             catch (Exception ex)
             {
-
                 // SE DER ALGUM ERRO ESSA MENSAGEM DE ERRO SERÁ ATIVADA.
                 MessageBox.Show(ex.Message);
-
-
             }
             finally
             {
@@ -172,13 +167,6 @@ namespace View.Telas_de_Cadastro
                 conexao = null;
                 comando = null;
             }
-
-
-
-
-
-
-
         }
 
         private void guna2Button7_Click(object sender, EventArgs e)
@@ -207,7 +195,7 @@ namespace View.Telas_de_Cadastro
                 //faz o loop para varrer os campos para trazer as informaçoes da tabela
                 while (dr.Read())
                 {
-                    
+
                     txtContrato.Text = Convert.ToString(dr["contrato_n"]);
                     txtNome.Text = (string)dr["aluno"];
                     txtNascimento.Text = Convert.ToString(dr["data_nascimento"]);
@@ -235,48 +223,46 @@ namespace View.Telas_de_Cadastro
                 conexao = null;
                 comando = null;
             }
-
-
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
         {
             try
             {
-                
-                    //FAZENDO A CONEXAO ENTRE INSTANCIA, BANCO DE DADOS.
-                    conexao = new SqlConnection(@"Data Source=DESKTOP-JQ2VDHB;Initial Catalog=SistemaAerosmith;Persist Security Info=True;User ID=sa;Password=123456;TrustServerCertificate=True");
 
-                    strSQL = "SELECT * FROM CADASTROJARDIMBOTANICO WHERE CONTRATO_N = @CONTRATO_N";
+                //FAZENDO A CONEXAO ENTRE INSTANCIA, BANCO DE DADOS.
+                conexao = new SqlConnection(@"Data Source=DESKTOP-JQ2VDHB;Initial Catalog=SistemaAerosmith;Persist Security Info=True;User ID=sa;Password=123456;TrustServerCertificate=True");
 
-                        //Faz um consulta pelo cpf
+                strSQL = "SELECT * FROM CADASTROJARDIMBOTANICO WHERE CONTRATO_N = @CONTRATO_N";
 
-
-                        //INSTANCIA A PRORPRIEDADE SQLCOMAND, SETANDO O CAMPO ID da interface com o campo id do banco de dados
+                //Faz um consulta pelo cpf
 
 
-                        comando = new SqlCommand(strSQL, conexao);
-                        comando.Parameters.AddWithValue("@CONTRATO_N", txtBuscaContrato.Text);
-
-                        //abre a conexao
-                        conexao.Open();
-
-                        //instancia o datareader
-                        dr = comando.ExecuteReader();
+                //INSTANCIA A PRORPRIEDADE SQLCOMAND, SETANDO O CAMPO ID da interface com o campo id do banco de dados
 
 
-                        //faz o loop para varrer os campos para trazer as informaçoes da tabela
-                        while (dr.Read())
-                        {
+                comando = new SqlCommand(strSQL, conexao);
+                comando.Parameters.AddWithValue("@CONTRATO_N", txtBuscaContrato.Text);
 
-                            txtContrato.Text = Convert.ToString(dr["contrato_n"]);
-                            txtNome.Text = (string)dr["aluno"];
-                            txtNascimento.Text = Convert.ToString(dr["data_nascimento"]);
-                            txtCPF.Text = (string)dr["cpf"];
-                            txtCurso.Text = (string)dr["curso"];
-                            txtAno.Text = Convert.ToString(dr["ano"]);
-                            txtTurno.Text = (string)dr["turno"];
-                        }
+                //abre a conexao
+                conexao.Open();
+
+                //instancia o datareader
+                dr = comando.ExecuteReader();
+
+
+                //faz o loop para varrer os campos para trazer as informaçoes da tabela
+                while (dr.Read())
+                {
+
+                    txtContrato.Text = Convert.ToString(dr["contrato_n"]);
+                    txtNome.Text = (string)dr["aluno"];
+                    txtNascimento.Text = Convert.ToString(dr["data_nascimento"]);
+                    txtCPF.Text = (string)dr["cpf"];
+                    txtCurso.Text = (string)dr["curso"];
+                    txtAno.Text = Convert.ToString(dr["ano"]);
+                    txtTurno.Text = (string)dr["turno"];
+                }
             }
             catch (Exception ex)
             {
@@ -319,6 +305,7 @@ namespace View.Telas_de_Cadastro
                 comando.Parameters.AddWithValue("@CURSO", txtCurso.Text);
                 comando.Parameters.AddWithValue("@ANO", txtAno.Text);
                 comando.Parameters.AddWithValue("@TURNO", txtTurno.Text);
+
 
 
                 //ABRINDO CONEXAO
@@ -410,8 +397,6 @@ namespace View.Telas_de_Cadastro
 
                 // SE DER ALGUM ERRO ESSA MENSAGEM DE ERRO SERÁ ATIVADA.
                 MessageBox.Show(ex.Message);
-
-
             }
             finally
             {
@@ -423,6 +408,25 @@ namespace View.Telas_de_Cadastro
                 comando = null;
             }
         }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            CarregaImagem();
+        }
+        public void CarregaImagem()
+        {
+            
+                //verifica se a imagem foi carregada 
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    //seleciona a imgaem e vincula a mesma ao pictureBox chamado "exibirImagem"
+                    pictureBox1.ImageLocation = openFileDialog1.FileName;
+                    //carrega a imagem selecionada no Picture box "exibirImagem"
+                    pictureBox1.Load();
+                    //salva o caminho da imagem selecionada em um Label
+                    // Caminho2.Text = "Caminho" + openFileDialog1.FileName;
+                }
+        }
     }
-    }
+}
 
