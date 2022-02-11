@@ -34,7 +34,7 @@ namespace View
 
         private void cadastroJardimBotânicoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CadastroJardimBotanico jardim = new CadastroJardimBotanico();
+            FrmCadastroJardimBotanico jardim = new FrmCadastroJardimBotanico();
 
             jardim.Show();
         }
@@ -53,6 +53,12 @@ namespace View
             {
                 e.Cancel = true;
             }
+        }
+
+        private void cadastroClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCadastroClientes cadastro = new FrmCadastroClientes();
+            cadastro.Show();
         }
     }
 }

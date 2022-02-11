@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Drawing;
 using System.Drawing.Imaging;
 using System.Drawing.Configuration;
 using System.IO;
@@ -11,19 +12,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using System.Drawing.Bitmap;
+using System.Data.SqlTypes;
+
 
 
 namespace View.Telas_de_Cadastro
 {
-    public partial class CadastroJardimBotanico : Form
+    public partial class FrmCadastroJardimBotanico : Form
     {
         SqlConnection conexao;
         SqlCommand comando;
         SqlDataAdapter da;
         SqlDataReader dr;
         string strSQL;
-        public CadastroJardimBotanico()
+        public FrmCadastroJardimBotanico()
         {
             InitializeComponent();
         }
@@ -35,7 +37,7 @@ namespace View.Telas_de_Cadastro
                 conexao = new SqlConnection(@"Data Source=DESKTOP-JQ2VDHB;Initial Catalog=SistemaAerosmith;Persist Security Info=True;User ID=sa;Password=123456;TrustServerCertificate=True");
 
                 //inserindo DADOS no banco de dados na tabela CAD_CLIENTE
-                strSQL = "INSERT INTO CADASTROJARDIMBOTANICO(CONTRATO_N, ALUNO, DATA_NASCIMENTO, CPF, CURSO, ANO, TURNO ) VALUES (@CONTRATO_N, @ALUNO, @DATA_NASCIMENTO, @CPF, @CURSO, @ANO, @TURNO)";
+                strSQL = "INSERT INTO CADASTROJARDIMBOTANICO(CONTRATO_N, ALUNO, DATA_NASCIMENTO, CPF, CURSO, ANO, TURNO) VALUES (@CONTRATO_N, @ALUNO, @DATA_NASCIMENTO, @CPF, @CURSO, @ANO, @TURNO)";
 
                 //INSTANCIA A PRORPRIEDADE SQLCOMAND, SETANDO O CAMPOS DA TABELA COM OS TEXTBOX DA INTERFACE
 
@@ -47,6 +49,7 @@ namespace View.Telas_de_Cadastro
                 comando.Parameters.AddWithValue("@CURSO", txtCurso.Text);
                 comando.Parameters.AddWithValue("@ANO", txtAno.Text);
                 comando.Parameters.AddWithValue("@TURNO", txtTurno.Text);
+                //comando.Parameters.AddWithValue("@IMAGEM", pictureBox1.Image);
 
                 //ABRINDO CONEXAO
                 conexao.Open();

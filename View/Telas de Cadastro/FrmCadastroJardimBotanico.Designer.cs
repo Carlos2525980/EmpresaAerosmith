@@ -1,6 +1,6 @@
 ﻿namespace View.Telas_de_Cadastro
 {
-    partial class CadastroJardimBotanico
+    partial class FrmCadastroJardimBotanico
     {
         /// <summary>
         /// Required designer variable.

@@ -59,6 +59,9 @@
     <Reference Include="BitmapNet, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bitmap.Net.1.0.1\lib\netstandard2.0\BitmapNet.dll</HintPath>
     </Reference>
+    <Reference Include="DrawnTableControl, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DrawnTable.1.0.3\lib\net45\DrawnTableControl.dll</HintPath>
+    </Reference>
     <Reference Include="GitHubSharp, Version=1.0.15.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\GitHubClient.1.0.15\lib\portable45-net45+win8+wpa81\GitHubSharp.dll</HintPath>
     </Reference>
@@ -102,6 +105,9 @@
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.8.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
+    <Reference Include="MvcCheckBoxList, Version=1.4.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvcCheckBoxList.1.4.5\lib\net45\MvcCheckBoxList.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -123,6 +129,11 @@
     </Reference>
     <Reference Include="System.Drawing.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Drawing.Common.6.0.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Primitives.4.3.0\lib\net45\System.Drawing.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.IdentityModel" />
     <Reference Include="System.IdentityModel.Tokens.Jwt, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -199,11 +210,17 @@
     <Compile Include="Notificacoes\NotificaoErro.Designer.cs">
       <DependentUpon>NotificaoErro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas de Cadastro\CadastroJardimBotanico.cs">
+    <Compile Include="Telas de Cadastro\FrmCadastroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas de Cadastro\CadastroJardimBotanico.Designer.cs">
-      <DependentUpon>CadastroJardimBotanico.cs</DependentUpon>
+    <Compile Include="Telas de Cadastro\FrmCadastroClientes.Designer.cs">
+      <DependentUpon>FrmCadastroClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas de Cadastro\FrmCadastroJardimBotanico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Cadastro\FrmCadastroJardimBotanico.Designer.cs">
+      <DependentUpon>FrmCadastroJardimBotanico.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas de Cadastro\FrmCadastroAssociados.cs">
       <SubType>Form</SubType>
@@ -225,8 +242,11 @@
     <EmbeddedResource Include="Notificacoes\NotificaoErro.resx">
       <DependentUpon>NotificaoErro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas de Cadastro\CadastroJardimBotanico.resx">
-      <DependentUpon>CadastroJardimBotanico.cs</DependentUpon>
+    <EmbeddedResource Include="Telas de Cadastro\FrmCadastroClientes.resx">
+      <DependentUpon>FrmCadastroClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Cadastro\FrmCadastroJardimBotanico.resx">
+      <DependentUpon>FrmCadastroJardimBotanico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas de Cadastro\FrmCadastroAssociados.resx">
       <DependentUpon>FrmCadastroAssociados.cs</DependentUpon>
@@ -311,6 +331,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\carregando1.png" />
+    <None Include="Resources\album-de-foto.png" />
+    <None Include="Resources\ponto-de-interrogacao.png" />
+    <None Include="Resources\sair1.png" />
+    <None Include="Resources\sair.png" />
+    <None Include="Resources\lupa1.png" />
+    <None Include="Resources\cancelar.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\excluir.png" />
+    <None Include="Resources\verifica.png" />
+    <None Include="Resources\registro.png" />
     <None Include="Resources\imagem.png" />
     <None Include="Resources\carregando.png" />
     <None Include="Resources\selecione.png" />
