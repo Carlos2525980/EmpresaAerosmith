@@ -64,60 +64,105 @@ namespace View.Telas_de_Cadastro
             }
         }
 
+
+
+
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-
-            try
-            {
-                conexao = new SqlConnection(@"Data Source=DESKTOP-JQ2VDHB;Initial Catalog=SistemaAerosmith;Persist Security Info=True;User ID=sa;Password=123456;TrustServerCertificate=True");
-
-
-                strSQL = "INSERT INTO CADASTROCLIENTE(NOME , ENDERECO , CIDADE , EMAIL , TELEFONE , SEXO , UF , CEP) VALUES(@NOME, @ENDERECO, @CIDADE, @EMAIL, @TELEFONE, @SEXO, @UF, @CEP)";
-
-                comando = new SqlCommand(strSQL, conexao);
-
-                comando.Parameters.AddWithValue("@NOME", txtNome.Text);
-                comando.Parameters.AddWithValue("@ENDERECO", txtEndereco.Text);
-                comando.Parameters.AddWithValue("@CIDADE", txtCidade.Text);
-                comando.Parameters.AddWithValue("@EMAIL", txtEmail.Text);
-                comando.Parameters.AddWithValue("@TELEFONE", txtTelefone.Text);
-                comando.Parameters.AddWithValue("@UF", comboUF.Text);
-                comando.Parameters.AddWithValue("@CEP", txtCEP.Text);
-
-
-                if (radioMasculino.Checked == true)
+                if (txtNome.Text == "")
                 {
-                    comando.Parameters.AddWithValue("@SEXO", radioMasculino.Text);
+                    MessageBox.Show("Digite o nome!");
+                }
+                else if (txtEndereco.Text == "")
+                {
+                    MessageBox.Show("Digite o Endereço!");
+                }
+                else if (txtCidade.Text == "")
+                {
+                    MessageBox.Show("Digite o nome da Cidade!");
+                }
+                else if (txtEmail.Text == "")
+                {
+                    MessageBox.Show("Digite seu Email!");
+                }
+                else if (txtTelefone.Text == "")
+                {
+                    MessageBox.Show("Digite o Telefone para contato!");
+                }
+                else if (comboUF.Text == "")
+                {
+                    MessageBox.Show("Informe o Estado!");
+                }
+                else if (txtCEP.Text == "")
+                {
+                    MessageBox.Show("Digite o CEP!");
                 }
                 else
                 {
-                    comando.Parameters.AddWithValue("@SEXO", radioFeminino.Text);
+                    try
+                    {
+
+                        conexao = new SqlConnection(@"Data Source=DESKTOP-JQ2VDHB;Initial Catalog=SistemaAerosmith;Persist Security Info=True;User ID=sa;Password=123456;TrustServerCertificate=True");
+
+
+                        strSQL = "INSERT INTO CADASTROCLIENTE(NOME , ENDERECO , CIDADE , EMAIL , TELEFONE , SEXO , UF , CEP) VALUES(@NOME, @ENDERECO, @CIDADE, @EMAIL, @TELEFONE, @SEXO, @UF, @CEP)";
+
+                        comando = new SqlCommand(strSQL, conexao);
+
+                        comando.Parameters.AddWithValue("@NOME", txtNome.Text);
+                        comando.Parameters.AddWithValue("@ENDERECO", txtEndereco.Text);
+                        comando.Parameters.AddWithValue("@CIDADE", txtCidade.Text);
+                        comando.Parameters.AddWithValue("@EMAIL", txtEmail.Text);
+                        comando.Parameters.AddWithValue("@TELEFONE", txtTelefone.Text);
+                        comando.Parameters.AddWithValue("@UF", comboUF.Text);
+                        comando.Parameters.AddWithValue("@CEP", txtCEP.Text);
+
+                        if (radioMasculino.Text == "" || radioFeminino.Text == "")
+                        {
+                            MessageBox.Show("Escolha o Genero!");
+                        }
+                        else
+                        {
+                            if (radioMasculino.Checked == true)
+                            {
+                                comando.Parameters.AddWithValue("@SEXO", radioMasculino.Text);
+                            }
+                            else
+                            {
+                                comando.Parameters.AddWithValue("@SEXO", radioFeminino.Text);
+                            }
+                        }
+
+                        MessageBox.Show("Inserido com sucesso!");
+
+                        GroupBox1.Enabled = false;
+                        GroupBox2.Enabled = false;
+                        btnSalvar.Enabled = false;
+                        btnNovo.Enabled = true;
+                        btnCancelar.Enabled = false;
+                        btnEditar.Enabled = false;
+                        btnExcluir.Enabled = false;
+                        btnSalvar.Enabled = false;
+                        txtPesquisar.Enabled = true;
+                        btnTodos.Enabled = true;
+                        LimparControles();
+                        conexao.Open();
+                        comando.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                    MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                    conexao.Close();
+                    conexao = null;
+                    comando = null;
+                    }
+
+
                 }
-
-                MessageBox.Show("Inserido com sucesso!");
-
-                GroupBox1.Enabled = false;
-                GroupBox2.Enabled = false;
-                btnSalvar.Enabled = false;
-                btnNovo.Enabled = true;
-                btnCancelar.Enabled = false;
-                btnEditar.Enabled = false;
-                btnExcluir.Enabled = false;
-                btnSalvar.Enabled = false;
-                LimparControles();
-                conexao.Open();
-                comando.ExecuteNonQuery();
-
-            } catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                conexao.Close();
-                conexao = null;
-                comando = null;
-            }
 
 
 
@@ -194,6 +239,8 @@ namespace View.Telas_de_Cadastro
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+
+
             btnNovo.Enabled = false;
             txtPesquisar.Enabled = false;
             btnTodos.Enabled = false;
