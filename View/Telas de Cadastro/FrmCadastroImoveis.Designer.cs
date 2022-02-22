@@ -83,6 +83,7 @@ namespace CadaastroDeImoveis
             this.btnExcluir = new Guna.UI2.WinForms.Guna2Button();
             this.btnEditar = new Guna.UI2.WinForms.Guna2Button();
             this.btnGravar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCarregar = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvgdados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -659,7 +660,7 @@ namespace CadaastroDeImoveis
             this.btnImprimir.Location = new System.Drawing.Point(33, 609);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.ShadowDecoration.Parent = this.btnImprimir;
-            this.btnImprimir.Size = new System.Drawing.Size(249, 89);
+            this.btnImprimir.Size = new System.Drawing.Size(254, 89);
             this.btnImprimir.TabIndex = 59;
             this.btnImprimir.Text = "Imprimir";
             // 
@@ -702,7 +703,7 @@ namespace CadaastroDeImoveis
             this.btnExcluir.ForeColor = System.Drawing.Color.Black;
             this.btnExcluir.HoverState.Parent = this.btnExcluir;
             this.btnExcluir.Image = global::View.Properties.Resources.excluir;
-            this.btnExcluir.Location = new System.Drawing.Point(390, 609);
+            this.btnExcluir.Location = new System.Drawing.Point(587, 609);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.ShadowDecoration.Parent = this.btnExcluir;
             this.btnExcluir.Size = new System.Drawing.Size(249, 89);
@@ -725,7 +726,7 @@ namespace CadaastroDeImoveis
             this.btnEditar.ForeColor = System.Drawing.Color.Black;
             this.btnEditar.HoverState.Parent = this.btnEditar;
             this.btnEditar.Image = global::View.Properties.Resources.editar;
-            this.btnEditar.Location = new System.Drawing.Point(762, 609);
+            this.btnEditar.Location = new System.Drawing.Point(866, 609);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.ShadowDecoration.Parent = this.btnEditar;
             this.btnEditar.Size = new System.Drawing.Size(249, 89);
@@ -755,12 +756,36 @@ namespace CadaastroDeImoveis
             this.btnGravar.TabIndex = 62;
             this.btnGravar.Text = "Gravar";
             // 
+            // btnCarregar
+            // 
+            this.btnCarregar.BorderRadius = 5;
+            this.btnCarregar.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.btnCarregar.CheckedState.Parent = this.btnCarregar;
+            this.btnCarregar.CustomImages.Parent = this.btnCarregar;
+            this.btnCarregar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCarregar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCarregar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCarregar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCarregar.DisabledState.Parent = this.btnCarregar;
+            this.btnCarregar.FillColor = System.Drawing.Color.ForestGreen;
+            this.btnCarregar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCarregar.ForeColor = System.Drawing.Color.Black;
+            this.btnCarregar.HoverState.Parent = this.btnCarregar;
+            this.btnCarregar.Image = global::View.Properties.Resources.carregando;
+            this.btnCarregar.Location = new System.Drawing.Point(309, 609);
+            this.btnCarregar.Name = "btnCarregar";
+            this.btnCarregar.ShadowDecoration.Parent = this.btnCarregar;
+            this.btnCarregar.Size = new System.Drawing.Size(249, 89);
+            this.btnCarregar.TabIndex = 63;
+            this.btnCarregar.Text = "Carregar";
+            // 
             // FrmCadastroImoveis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(1405, 724);
+            this.Controls.Add(this.btnCarregar);
             this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnExcluir);
@@ -882,6 +907,7 @@ namespace CadaastroDeImoveis
         private Guna.UI2.WinForms.Guna2Button btnExcluir;
         private Guna.UI2.WinForms.Guna2Button btnEditar;
         private Guna.UI2.WinForms.Guna2Button btnGravar;
+        private Guna.UI2.WinForms.Guna2Button btnCarregar;
     }
 }
 
