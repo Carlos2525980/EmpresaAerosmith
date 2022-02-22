@@ -210,6 +210,12 @@
     <Compile Include="Notificacoes\NotificaoErro.Designer.cs">
       <DependentUpon>NotificaoErro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas de Cadastro\FrmCadastroImoveis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Cadastro\FrmCadastroImoveis.Designer.cs">
+      <DependentUpon>FrmCadastroImoveis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas de Cadastro\FrmCadastroClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Notificacoes\NotificaoErro.resx">
       <DependentUpon>NotificaoErro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Cadastro\FrmCadastroImoveis.resx">
+      <DependentUpon>FrmCadastroImoveis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas de Cadastro\FrmCadastroClientes.resx">
       <DependentUpon>FrmCadastroClientes.cs</DependentUpon>
@@ -331,6 +340,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\teste-de-impressao.png" />
     <None Include="Resources\carregando1.png" />
     <None Include="Resources\album-de-foto.png" />
     <None Include="Resources\ponto-de-interrogacao.png" />

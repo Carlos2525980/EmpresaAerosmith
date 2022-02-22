@@ -403,6 +403,16 @@ namespace View.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap teste_de_impressao {
+            get {
+                object obj = ResourceManager.GetObject("teste-de-impressao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap troca {
             get {
                 object obj = ResourceManager.GetObject("troca", resourceCulture);

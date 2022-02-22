@@ -32,9 +32,10 @@
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroDeAssociadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroJardimBotânicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controllersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilitáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeImóveisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +58,8 @@
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroDeAssociadosToolStripMenuItem,
             this.cadastroJardimBotânicoToolStripMenuItem,
-            this.cadastroClientesToolStripMenuItem});
+            this.cadastroClientesToolStripMenuItem,
+            this.cadastroDeImóveisToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.cadastrosToolStripMenuItem.Text = "1 - Cadastros";
@@ -76,6 +78,13 @@
             this.cadastroJardimBotânicoToolStripMenuItem.Text = "2 - Cadastro Jardim Botânico";
             this.cadastroJardimBotânicoToolStripMenuItem.Click += new System.EventHandler(this.cadastroJardimBotânicoToolStripMenuItem_Click);
             // 
+            // cadastroClientesToolStripMenuItem
+            // 
+            this.cadastroClientesToolStripMenuItem.Name = "cadastroClientesToolStripMenuItem";
+            this.cadastroClientesToolStripMenuItem.Size = new System.Drawing.Size(276, 26);
+            this.cadastroClientesToolStripMenuItem.Text = "3 - Cadastro Clientes";
+            this.cadastroClientesToolStripMenuItem.Click += new System.EventHandler(this.cadastroClientesToolStripMenuItem_Click);
+            // 
             // controllersToolStripMenuItem
             // 
             this.controllersToolStripMenuItem.Name = "controllersToolStripMenuItem";
@@ -88,12 +97,12 @@
             this.utilitáriosToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.utilitáriosToolStripMenuItem.Text = "3 - Utilitários ";
             // 
-            // cadastroClientesToolStripMenuItem
+            // cadastroDeImóveisToolStripMenuItem
             // 
-            this.cadastroClientesToolStripMenuItem.Name = "cadastroClientesToolStripMenuItem";
-            this.cadastroClientesToolStripMenuItem.Size = new System.Drawing.Size(276, 26);
-            this.cadastroClientesToolStripMenuItem.Text = "3 - Cadastro Clientes";
-            this.cadastroClientesToolStripMenuItem.Click += new System.EventHandler(this.cadastroClientesToolStripMenuItem_Click);
+            this.cadastroDeImóveisToolStripMenuItem.Name = "cadastroDeImóveisToolStripMenuItem";
+            this.cadastroDeImóveisToolStripMenuItem.Size = new System.Drawing.Size(276, 26);
+            this.cadastroDeImóveisToolStripMenuItem.Text = " 4 - Cadastro de Imóveis";
+            this.cadastroDeImóveisToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeImóveisToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -124,5 +133,6 @@
         private System.Windows.Forms.ToolStripMenuItem controllersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem utilitáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastroClientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroDeImóveisToolStripMenuItem;
     }
 }

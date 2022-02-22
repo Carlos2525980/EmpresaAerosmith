@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CadaastroDeImoveis;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -58,6 +59,12 @@ namespace View
         private void cadastroClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmCadastroClientes cadastro = new FrmCadastroClientes();
+            cadastro.Show();
+        }
+
+        private void cadastroDeImóveisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCadastroImoveis cadastro = new FrmCadastroImoveis();
             cadastro.Show();
         }
     }
