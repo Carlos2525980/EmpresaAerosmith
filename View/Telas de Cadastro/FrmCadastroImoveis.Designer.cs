@@ -30,22 +30,20 @@ namespace CadaastroDeImoveis
         private void InitializeComponent()
         {
             this.radioVenda = new System.Windows.Forms.RadioButton();
-            this.radioLocalizacao = new System.Windows.Forms.RadioButton();
+            this.radioLocacao = new System.Windows.Forms.RadioButton();
             this.radioNegociados = new System.Windows.Forms.RadioButton();
             this.radioSuspensos = new System.Windows.Forms.RadioButton();
             this.checkKitnete = new System.Windows.Forms.CheckBox();
             this.checkCobertura = new System.Windows.Forms.CheckBox();
-            this.checkTerreo = new System.Windows.Forms.CheckBox();
             this.checkFlat = new System.Windows.Forms.CheckBox();
             this.checkStudio = new System.Windows.Forms.CheckBox();
             this.checkCasa = new System.Windows.Forms.CheckBox();
             this.checkApartamento = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkTerreo = new System.Windows.Forms.CheckBox();
             this.checkRural = new System.Windows.Forms.CheckBox();
             this.checkComercial = new System.Windows.Forms.CheckBox();
             this.checkIndustrial = new System.Windows.Forms.CheckBox();
             this.checkSem_Condominio = new System.Windows.Forms.CheckBox();
-            this.checkUm_por_andar = new System.Windows.Forms.CheckBox();
             this.checkDuplex = new System.Windows.Forms.CheckBox();
             this.checkTriplex = new System.Windows.Forms.CheckBox();
             this.checkPadrao = new System.Windows.Forms.CheckBox();
@@ -100,18 +98,18 @@ namespace CadaastroDeImoveis
             this.radioVenda.Text = "Venda";
             this.radioVenda.UseVisualStyleBackColor = true;
             // 
-            // radioLocalizacao
+            // radioLocacao
             // 
-            this.radioLocalizacao.AutoSize = true;
-            this.radioLocalizacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioLocalizacao.Location = new System.Drawing.Point(33, 68);
-            this.radioLocalizacao.Margin = new System.Windows.Forms.Padding(4);
-            this.radioLocalizacao.Name = "radioLocalizacao";
-            this.radioLocalizacao.Size = new System.Drawing.Size(101, 24);
-            this.radioLocalizacao.TabIndex = 1;
-            this.radioLocalizacao.TabStop = true;
-            this.radioLocalizacao.Text = "Locação";
-            this.radioLocalizacao.UseVisualStyleBackColor = true;
+            this.radioLocacao.AutoSize = true;
+            this.radioLocacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioLocacao.Location = new System.Drawing.Point(33, 68);
+            this.radioLocacao.Margin = new System.Windows.Forms.Padding(4);
+            this.radioLocacao.Name = "radioLocacao";
+            this.radioLocacao.Size = new System.Drawing.Size(101, 24);
+            this.radioLocacao.TabIndex = 1;
+            this.radioLocacao.TabStop = true;
+            this.radioLocacao.Text = "Locação";
+            this.radioLocacao.UseVisualStyleBackColor = true;
             // 
             // radioNegociados
             // 
@@ -164,23 +162,11 @@ namespace CadaastroDeImoveis
             this.checkCobertura.Text = "Cobertura";
             this.checkCobertura.UseVisualStyleBackColor = true;
             // 
-            // checkTerreo
-            // 
-            this.checkTerreo.AutoSize = true;
-            this.checkTerreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkTerreo.Location = new System.Drawing.Point(36, 249);
-            this.checkTerreo.Margin = new System.Windows.Forms.Padding(4);
-            this.checkTerreo.Name = "checkTerreo";
-            this.checkTerreo.Size = new System.Drawing.Size(86, 24);
-            this.checkTerreo.TabIndex = 6;
-            this.checkTerreo.Text = "Terreo";
-            this.checkTerreo.UseVisualStyleBackColor = true;
-            // 
             // checkFlat
             // 
             this.checkFlat.AutoSize = true;
             this.checkFlat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkFlat.Location = new System.Drawing.Point(36, 277);
+            this.checkFlat.Location = new System.Drawing.Point(36, 247);
             this.checkFlat.Margin = new System.Windows.Forms.Padding(4);
             this.checkFlat.Name = "checkFlat";
             this.checkFlat.Size = new System.Drawing.Size(63, 24);
@@ -192,7 +178,7 @@ namespace CadaastroDeImoveis
             // 
             this.checkStudio.AutoSize = true;
             this.checkStudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkStudio.Location = new System.Drawing.Point(36, 305);
+            this.checkStudio.Location = new System.Drawing.Point(36, 275);
             this.checkStudio.Margin = new System.Windows.Forms.Padding(4);
             this.checkStudio.Name = "checkStudio";
             this.checkStudio.Size = new System.Drawing.Size(84, 24);
@@ -224,17 +210,17 @@ namespace CadaastroDeImoveis
             this.checkApartamento.Text = "Apartamento";
             this.checkApartamento.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // checkTerreo
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.Location = new System.Drawing.Point(181, 97);
-            this.checkBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(86, 24);
-            this.checkBox8.TabIndex = 11;
-            this.checkBox8.Text = "Terreo";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkTerreo.AutoSize = true;
+            this.checkTerreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkTerreo.Location = new System.Drawing.Point(181, 97);
+            this.checkTerreo.Margin = new System.Windows.Forms.Padding(4);
+            this.checkTerreo.Name = "checkTerreo";
+            this.checkTerreo.Size = new System.Drawing.Size(86, 24);
+            this.checkTerreo.TabIndex = 11;
+            this.checkTerreo.Text = "Terreo";
+            this.checkTerreo.UseVisualStyleBackColor = true;
             // 
             // checkRural
             // 
@@ -284,23 +270,11 @@ namespace CadaastroDeImoveis
             this.checkSem_Condominio.Text = "S/Condomínio";
             this.checkSem_Condominio.UseVisualStyleBackColor = true;
             // 
-            // checkUm_por_andar
-            // 
-            this.checkUm_por_andar.AutoSize = true;
-            this.checkUm_por_andar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkUm_por_andar.Location = new System.Drawing.Point(181, 217);
-            this.checkUm_por_andar.Margin = new System.Windows.Forms.Padding(4);
-            this.checkUm_por_andar.Name = "checkUm_por_andar";
-            this.checkUm_por_andar.Size = new System.Drawing.Size(131, 24);
-            this.checkUm_por_andar.TabIndex = 16;
-            this.checkUm_por_andar.Text = "1 Por Andar";
-            this.checkUm_por_andar.UseVisualStyleBackColor = true;
-            // 
             // checkDuplex
             // 
             this.checkDuplex.AutoSize = true;
             this.checkDuplex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkDuplex.Location = new System.Drawing.Point(181, 245);
+            this.checkDuplex.Location = new System.Drawing.Point(181, 219);
             this.checkDuplex.Margin = new System.Windows.Forms.Padding(4);
             this.checkDuplex.Name = "checkDuplex";
             this.checkDuplex.Size = new System.Drawing.Size(89, 24);
@@ -312,7 +286,7 @@ namespace CadaastroDeImoveis
             // 
             this.checkTriplex.AutoSize = true;
             this.checkTriplex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkTriplex.Location = new System.Drawing.Point(181, 273);
+            this.checkTriplex.Location = new System.Drawing.Point(181, 247);
             this.checkTriplex.Margin = new System.Windows.Forms.Padding(4);
             this.checkTriplex.Name = "checkTriplex";
             this.checkTriplex.Size = new System.Drawing.Size(88, 24);
@@ -324,7 +298,7 @@ namespace CadaastroDeImoveis
             // 
             this.checkPadrao.AutoSize = true;
             this.checkPadrao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkPadrao.Location = new System.Drawing.Point(181, 305);
+            this.checkPadrao.Location = new System.Drawing.Point(181, 279);
             this.checkPadrao.Margin = new System.Windows.Forms.Padding(4);
             this.checkPadrao.Name = "checkPadrao";
             this.checkPadrao.Size = new System.Drawing.Size(90, 24);
@@ -568,7 +542,7 @@ namespace CadaastroDeImoveis
             this.txtArea_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtArea_M.Location = new System.Drawing.Point(688, 220);
             this.txtArea_M.Margin = new System.Windows.Forms.Padding(4);
-            this.txtArea_M.Mask = "0.00";
+            this.txtArea_M.Mask = "0000";
             this.txtArea_M.Name = "txtArea_M";
             this.txtArea_M.Size = new System.Drawing.Size(243, 26);
             this.txtArea_M.TabIndex = 46;
@@ -580,23 +554,22 @@ namespace CadaastroDeImoveis
             this.txtV_M_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtV_M_C.Location = new System.Drawing.Point(948, 220);
             this.txtV_M_C.Margin = new System.Windows.Forms.Padding(4);
-            this.txtV_M_C.Mask = "0.00";
+            this.txtV_M_C.Mask = "$0000,00";
             this.txtV_M_C.Name = "txtV_M_C";
             this.txtV_M_C.Size = new System.Drawing.Size(243, 26);
             this.txtV_M_C.TabIndex = 47;
-            this.txtV_M_C.Text = "000";
             this.txtV_M_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtV_Entrada
             // 
-            this.txtV_Entrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtV_Entrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(10)));
+            this.txtV_Entrada.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
             this.txtV_Entrada.Location = new System.Drawing.Point(688, 277);
             this.txtV_Entrada.Margin = new System.Windows.Forms.Padding(4);
-            this.txtV_Entrada.Mask = "0.00";
+            this.txtV_Entrada.Mask = "$0000,00";
             this.txtV_Entrada.Name = "txtV_Entrada";
             this.txtV_Entrada.Size = new System.Drawing.Size(243, 26);
             this.txtV_Entrada.TabIndex = 48;
-            this.txtV_Entrada.Text = "000";
             this.txtV_Entrada.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtV_M
@@ -604,7 +577,7 @@ namespace CadaastroDeImoveis
             this.txtV_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtV_M.Location = new System.Drawing.Point(948, 277);
             this.txtV_M.Margin = new System.Windows.Forms.Padding(4);
-            this.txtV_M.Mask = "0.00";
+            this.txtV_M.Mask = "$0000,00";
             this.txtV_M.Name = "txtV_M";
             this.txtV_M.Size = new System.Drawing.Size(243, 26);
             this.txtV_M.TabIndex = 49;
@@ -663,6 +636,7 @@ namespace CadaastroDeImoveis
             this.btnImprimir.Size = new System.Drawing.Size(254, 89);
             this.btnImprimir.TabIndex = 59;
             this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnPesquisar
             // 
@@ -686,6 +660,7 @@ namespace CadaastroDeImoveis
             this.btnPesquisar.Size = new System.Drawing.Size(190, 139);
             this.btnPesquisar.TabIndex = 58;
             this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click_1);
             // 
             // btnExcluir
             // 
@@ -709,6 +684,7 @@ namespace CadaastroDeImoveis
             this.btnExcluir.Size = new System.Drawing.Size(249, 89);
             this.btnExcluir.TabIndex = 60;
             this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click_1);
             // 
             // btnEditar
             // 
@@ -732,6 +708,7 @@ namespace CadaastroDeImoveis
             this.btnEditar.Size = new System.Drawing.Size(249, 89);
             this.btnEditar.TabIndex = 61;
             this.btnEditar.Text = "Editar";
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click_1);
             // 
             // btnGravar
             // 
@@ -755,6 +732,7 @@ namespace CadaastroDeImoveis
             this.btnGravar.Size = new System.Drawing.Size(249, 89);
             this.btnGravar.TabIndex = 62;
             this.btnGravar.Text = "Gravar";
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
             // 
             // btnCarregar
             // 
@@ -778,6 +756,7 @@ namespace CadaastroDeImoveis
             this.btnCarregar.Size = new System.Drawing.Size(249, 89);
             this.btnCarregar.TabIndex = 63;
             this.btnCarregar.Text = "Carregar";
+            this.btnCarregar.Click += new System.EventHandler(this.btnCarregar_Click);
             // 
             // FrmCadastroImoveis
             // 
@@ -823,27 +802,26 @@ namespace CadaastroDeImoveis
             this.Controls.Add(this.checkPadrao);
             this.Controls.Add(this.checkTriplex);
             this.Controls.Add(this.checkDuplex);
-            this.Controls.Add(this.checkUm_por_andar);
             this.Controls.Add(this.checkSem_Condominio);
             this.Controls.Add(this.checkIndustrial);
             this.Controls.Add(this.checkComercial);
             this.Controls.Add(this.checkRural);
-            this.Controls.Add(this.checkBox8);
+            this.Controls.Add(this.checkTerreo);
             this.Controls.Add(this.checkApartamento);
             this.Controls.Add(this.checkCasa);
             this.Controls.Add(this.checkStudio);
             this.Controls.Add(this.checkFlat);
-            this.Controls.Add(this.checkTerreo);
             this.Controls.Add(this.checkCobertura);
             this.Controls.Add(this.checkKitnete);
             this.Controls.Add(this.radioSuspensos);
             this.Controls.Add(this.radioNegociados);
-            this.Controls.Add(this.radioLocalizacao);
+            this.Controls.Add(this.radioLocacao);
             this.Controls.Add(this.radioVenda);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmCadastroImoveis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Imoveis";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmCadastroImoveis_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvgdados)).EndInit();
             this.ResumeLayout(false);
@@ -854,22 +832,20 @@ namespace CadaastroDeImoveis
         #endregion
 
         private System.Windows.Forms.RadioButton radioVenda;
-        private System.Windows.Forms.RadioButton radioLocalizacao;
+        private System.Windows.Forms.RadioButton radioLocacao;
         private System.Windows.Forms.RadioButton radioNegociados;
         private System.Windows.Forms.RadioButton radioSuspensos;
         private System.Windows.Forms.CheckBox checkKitnete;
         private System.Windows.Forms.CheckBox checkCobertura;
-        private System.Windows.Forms.CheckBox checkTerreo;
         private System.Windows.Forms.CheckBox checkFlat;
         private System.Windows.Forms.CheckBox checkStudio;
         private System.Windows.Forms.CheckBox checkCasa;
         private System.Windows.Forms.CheckBox checkApartamento;
-        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkTerreo;
         private System.Windows.Forms.CheckBox checkRural;
         private System.Windows.Forms.CheckBox checkComercial;
         private System.Windows.Forms.CheckBox checkIndustrial;
         private System.Windows.Forms.CheckBox checkSem_Condominio;
-        private System.Windows.Forms.CheckBox checkUm_por_andar;
         private System.Windows.Forms.CheckBox checkDuplex;
         private System.Windows.Forms.CheckBox checkTriplex;
         private System.Windows.Forms.CheckBox checkPadrao;
