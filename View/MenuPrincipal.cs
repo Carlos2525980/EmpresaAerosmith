@@ -1,4 +1,5 @@
 ﻿using CadaastroDeImoveis;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using View.Telas_de_Cadastro;
+using View.Telas_de_Calculos;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace View
@@ -66,6 +68,12 @@ namespace View
         {
             FrmCadastroImoveis cadastro = new FrmCadastroImoveis();
             cadastro.Show();
+        }
+
+        private void calcularIMCToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CalculoImc imc = new CalculoImc();
+            imc.Show();
         }
     }
 }

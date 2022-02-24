@@ -33,9 +33,10 @@
             this.cadastroDeAssociadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroJardimBotânicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeImóveisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controllersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilitáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroDeImóveisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calcularIMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,8 +86,17 @@
             this.cadastroClientesToolStripMenuItem.Text = "3 - Cadastro Clientes";
             this.cadastroClientesToolStripMenuItem.Click += new System.EventHandler(this.cadastroClientesToolStripMenuItem_Click);
             // 
+            // cadastroDeImóveisToolStripMenuItem
+            // 
+            this.cadastroDeImóveisToolStripMenuItem.Name = "cadastroDeImóveisToolStripMenuItem";
+            this.cadastroDeImóveisToolStripMenuItem.Size = new System.Drawing.Size(276, 26);
+            this.cadastroDeImóveisToolStripMenuItem.Text = " 4 - Cadastro de Imóveis";
+            this.cadastroDeImóveisToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeImóveisToolStripMenuItem_Click);
+            // 
             // controllersToolStripMenuItem
             // 
+            this.controllersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calcularIMCToolStripMenuItem});
             this.controllersToolStripMenuItem.Name = "controllersToolStripMenuItem";
             this.controllersToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
             this.controllersToolStripMenuItem.Text = "2 - Controllers";
@@ -97,12 +107,12 @@
             this.utilitáriosToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.utilitáriosToolStripMenuItem.Text = "3 - Utilitários ";
             // 
-            // cadastroDeImóveisToolStripMenuItem
+            // calcularIMCToolStripMenuItem
             // 
-            this.cadastroDeImóveisToolStripMenuItem.Name = "cadastroDeImóveisToolStripMenuItem";
-            this.cadastroDeImóveisToolStripMenuItem.Size = new System.Drawing.Size(276, 26);
-            this.cadastroDeImóveisToolStripMenuItem.Text = " 4 - Cadastro de Imóveis";
-            this.cadastroDeImóveisToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeImóveisToolStripMenuItem_Click);
+            this.calcularIMCToolStripMenuItem.Name = "calcularIMCToolStripMenuItem";
+            this.calcularIMCToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.calcularIMCToolStripMenuItem.Text = "Calcular IMC";
+            this.calcularIMCToolStripMenuItem.Click += new System.EventHandler(this.calcularIMCToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -134,5 +144,6 @@
         private System.Windows.Forms.ToolStripMenuItem utilitáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastroClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastroDeImóveisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calcularIMCToolStripMenuItem;
     }
 }
