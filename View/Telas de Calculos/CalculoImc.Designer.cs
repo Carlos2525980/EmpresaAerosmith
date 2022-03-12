@@ -78,9 +78,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(359, 302);
+            this.button1.Location = new System.Drawing.Point(368, 302);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 60);
+            this.button1.Size = new System.Drawing.Size(102, 60);
             this.button1.TabIndex = 6;
             this.button1.Text = "Resultado";
             this.button1.UseVisualStyleBackColor = false;
@@ -126,7 +126,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CalculoImc";
-            this.Text = "CalculoImc";
+            this.Text = "Calculo do IMC";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CalculoImc_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

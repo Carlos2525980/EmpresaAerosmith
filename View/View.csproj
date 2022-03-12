@@ -211,6 +211,12 @@
     <Compile Include="Notificacoes\NotificaoErro.Designer.cs">
       <DependentUpon>NotificaoErro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas de Cadastro\CadastroClientesBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Cadastro\CadastroClientesBanco.Designer.cs">
+      <DependentUpon>CadastroClientesBanco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas de Cadastro\FrmCadastroImoveis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +249,18 @@
     <Compile Include="Telas de Calculos\CalculoImc.Designer.cs">
       <DependentUpon>CalculoImc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas de Calculos\Financas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Calculos\Financas.Designer.cs">
+      <DependentUpon>Financas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas de Calculos\Lançamentos-Saldos e Extratos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Calculos\Lançamentos-Saldos e Extratos.Designer.cs">
+      <DependentUpon>Lançamentos-Saldos e Extratos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas de Login\TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Notificacoes\NotificaoErro.resx">
       <DependentUpon>NotificaoErro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Cadastro\CadastroClientesBanco.resx">
+      <DependentUpon>CadastroClientesBanco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas de Cadastro\FrmCadastroImoveis.resx">
       <DependentUpon>FrmCadastroImoveis.cs</DependentUpon>
@@ -279,6 +300,12 @@
     </Compile>
     <EmbeddedResource Include="Telas de Calculos\CalculoImc.resx">
       <DependentUpon>CalculoImc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Calculos\Financas.resx">
+      <DependentUpon>Financas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Calculos\Lançamentos-Saldos e Extratos.resx">
+      <DependentUpon>Lançamentos-Saldos e Extratos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas de Login\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>

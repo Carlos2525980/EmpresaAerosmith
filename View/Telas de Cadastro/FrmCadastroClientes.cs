@@ -217,6 +217,9 @@ namespace View.Telas_de_Cadastro
                 btnEditar.Enabled = true;
                 btnExcluir.Enabled = true;
                 btnSalvar.Enabled = false;
+
+                MessageBox.Show("Pesquisa realizada com Sucesso!");
+
             }
             catch (Exception ex)
             {

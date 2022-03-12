@@ -35,8 +35,9 @@
             this.cadastroClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroDeImóveisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controllersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.utilitáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calcularIMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.utilitáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.finançasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,16 +97,11 @@
             // controllersToolStripMenuItem
             // 
             this.controllersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.calcularIMCToolStripMenuItem});
+            this.calcularIMCToolStripMenuItem,
+            this.finançasToolStripMenuItem});
             this.controllersToolStripMenuItem.Name = "controllersToolStripMenuItem";
             this.controllersToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
             this.controllersToolStripMenuItem.Text = "2 - Controllers";
-            // 
-            // utilitáriosToolStripMenuItem
-            // 
-            this.utilitáriosToolStripMenuItem.Name = "utilitáriosToolStripMenuItem";
-            this.utilitáriosToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
-            this.utilitáriosToolStripMenuItem.Text = "3 - Utilitários ";
             // 
             // calcularIMCToolStripMenuItem
             // 
@@ -113,6 +109,19 @@
             this.calcularIMCToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.calcularIMCToolStripMenuItem.Text = "Calcular IMC";
             this.calcularIMCToolStripMenuItem.Click += new System.EventHandler(this.calcularIMCToolStripMenuItem_Click);
+            // 
+            // utilitáriosToolStripMenuItem
+            // 
+            this.utilitáriosToolStripMenuItem.Name = "utilitáriosToolStripMenuItem";
+            this.utilitáriosToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
+            this.utilitáriosToolStripMenuItem.Text = "3 - Utilitários ";
+            // 
+            // finançasToolStripMenuItem
+            // 
+            this.finançasToolStripMenuItem.Name = "finançasToolStripMenuItem";
+            this.finançasToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.finançasToolStripMenuItem.Text = "Finanças";
+            this.finançasToolStripMenuItem.Click += new System.EventHandler(this.finançasToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -145,5 +154,6 @@
         private System.Windows.Forms.ToolStripMenuItem cadastroClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastroDeImóveisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calcularIMCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem finançasToolStripMenuItem;
     }
 }

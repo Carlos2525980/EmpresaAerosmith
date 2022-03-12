@@ -75,5 +75,11 @@ namespace View
             CalculoImc imc = new CalculoImc();
             imc.Show();
         }
+
+        private void finançasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Financas f = new Financas();
+            f.Show();
+        }
     }
 }
