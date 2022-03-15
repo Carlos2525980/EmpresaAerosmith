@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>View</RootNamespace>
     <AssemblyName>View</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -29,6 +29,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -211,6 +212,11 @@
     <Compile Include="Notificacoes\NotificaoErro.Designer.cs">
       <DependentUpon>NotificaoErro.cs</DependentUpon>
     </Compile>
+    <Compile Include="SistemaAerosmithDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SistemaAerosmithDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Telas de Cadastro\CadastroClientesBanco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +326,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SistemaAerosmithDataSet.xsc">
+      <DependentUpon>SistemaAerosmithDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SistemaAerosmithDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SistemaAerosmithDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SistemaAerosmithDataSet.xss">
+      <DependentUpon>SistemaAerosmithDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
