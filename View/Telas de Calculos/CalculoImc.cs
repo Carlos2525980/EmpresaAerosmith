@@ -74,18 +74,6 @@ namespace View.Telas_de_Calculos
 
         private void CalculoImc_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Deseja fechar aplicação?", "SAIR",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-
-                Application.Exit();
-
-            }
-            else
-            {
-                e.Cancel = true;
-            }
         }
     }
 }

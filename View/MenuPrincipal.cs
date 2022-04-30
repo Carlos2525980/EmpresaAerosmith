@@ -78,7 +78,7 @@ namespace View
 
         private void finançasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Financas f = new Financas();
+            FrmFinancas f = new FrmFinancas();
             f.Show();
         }
     }

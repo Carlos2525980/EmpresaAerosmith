@@ -255,11 +255,29 @@
     <Compile Include="Telas de Calculos\CalculoImc.Designer.cs">
       <DependentUpon>CalculoImc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas de Calculos\ExtratoBancario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Calculos\ExtratoBancario.Designer.cs">
+      <DependentUpon>ExtratoBancario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas de Calculos\Financas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas de Calculos\Financas.Designer.cs">
       <DependentUpon>Financas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas de Calculos\FrmBoletim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Calculos\FrmBoletim.Designer.cs">
+      <DependentUpon>FrmBoletim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas de Calculos\FrmDepoistos e Saques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Calculos\FrmDepoistos e Saques.Designer.cs">
+      <DependentUpon>FrmDepoistos e Saques.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas de Calculos\Lançamentos-Saldos e Extratos.cs">
       <SubType>Form</SubType>
@@ -307,8 +325,17 @@
     <EmbeddedResource Include="Telas de Calculos\CalculoImc.resx">
       <DependentUpon>CalculoImc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Calculos\ExtratoBancario.resx">
+      <DependentUpon>ExtratoBancario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas de Calculos\Financas.resx">
       <DependentUpon>Financas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Calculos\FrmBoletim.resx">
+      <DependentUpon>FrmBoletim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Calculos\FrmDepoistos e Saques.resx">
+      <DependentUpon>FrmDepoistos e Saques.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas de Calculos\Lançamentos-Saldos e Extratos.resx">
       <DependentUpon>Lançamentos-Saldos e Extratos.cs</DependentUpon>
@@ -394,6 +421,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\sair2.png" />
+    <None Include="Resources\dinheiro.png" />
+    <None Include="Resources\saque.png" />
+    <None Include="Resources\deposito1.png" />
+    <None Include="Resources\deposito.png" />
     <None Include="Resources\teste-de-impressao.png" />
     <None Include="Resources\carregando1.png" />
     <None Include="Resources\album-de-foto.png" />
