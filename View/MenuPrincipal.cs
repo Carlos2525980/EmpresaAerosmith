@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Teste2;
 using View.Telas_de_Cadastro;
 using View.Telas_de_Calculos;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
@@ -80,6 +81,12 @@ namespace View
         {
             FrmFinancas f = new FrmFinancas();
             f.Show();
+        }
+
+        private void boletimToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBoletim boletin = new FrmBoletim();
+            boletin.Show();
         }
     }
 }
