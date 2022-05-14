@@ -9,6 +9,13 @@ namespace Teste2
         public FrmBoletim()
         {
             InitializeComponent();
+
+            txtRA.Enabled = true;
+            txtAluno.Enabled = false;
+            CBDisciplina.Enabled = false;
+            txtNota1.Enabled = false;
+            txtNota2.Enabled = false;
+
         }
         List<Alunos> lista = new List<Alunos>();
         Alunos aluno = new Alunos();
@@ -80,6 +87,67 @@ namespace Teste2
             else
             {
                 lbStatus.Text = "REPROVADO";
+            }
+        }
+
+        private void txtRA_TextChanged(object sender, EventArgs e)
+        {
+
+
+            if (txtRA.Text == null)
+            {
+
+                txtAluno.Enabled = false;
+
+            }
+            else
+            {
+                txtAluno.Enabled = true;
+            }
+
+
+
+
+        }
+
+        private void txtAluno_TextChanged(object sender, EventArgs e)
+        {
+
+
+            if (txtAluno.Text == null)
+            {
+                CBDisciplina.Enabled = false;
+            }
+            else
+            {
+                CBDisciplina.Enabled = true;
+            }
+
+
+        }
+
+        private void CBDisciplina_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (CBDisciplina == null)
+            {
+                txtNota1.Enabled = false;
+            }
+            else
+            {
+                txtNota1.Enabled = true;
+            }
+        }
+
+        private void txtNota1_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNota1 == null)
+            {
+                txtNota2.Enabled = false;
+            }
+            else
+            {
+                txtNota2.Enabled = true;
             }
         }
     }

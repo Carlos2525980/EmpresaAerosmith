@@ -59,42 +59,42 @@ namespace Teste2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Lucida Handwriting", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(6, 76);
+            this.label2.Location = new System.Drawing.Point(6, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 20);
+            this.label2.Size = new System.Drawing.Size(119, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Prova Oficial 2";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Handwriting", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label3.Location = new System.Drawing.Point(6, 128);
+            this.label3.Location = new System.Drawing.Point(6, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 20);
+            this.label3.Size = new System.Drawing.Size(56, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Status";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(6, 34);
+            this.label1.Location = new System.Drawing.Point(6, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 20);
+            this.label1.Size = new System.Drawing.Size(119, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "Prova Oficial 1";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 36F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(284, 9);
+            this.label5.Location = new System.Drawing.Point(284, 7);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(280, 81);
             this.label5.TabIndex = 5;
@@ -102,49 +102,54 @@ namespace Teste2
             // 
             // txtNota1
             // 
-            this.txtNota1.Location = new System.Drawing.Point(248, 27);
+            this.txtNota1.Location = new System.Drawing.Point(248, 22);
+            this.txtNota1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNota1.Name = "txtNota1";
             this.txtNota1.Size = new System.Drawing.Size(80, 34);
             this.txtNota1.TabIndex = 6;
+            this.txtNota1.TextChanged += new System.EventHandler(this.txtNota1_TextChanged);
             // 
             // txtNota2
             // 
-            this.txtNota2.Location = new System.Drawing.Point(248, 72);
+            this.txtNota2.Location = new System.Drawing.Point(248, 58);
+            this.txtNota2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNota2.Name = "txtNota2";
             this.txtNota2.Size = new System.Drawing.Size(80, 34);
             this.txtNota2.TabIndex = 7;
             // 
             // CBDisciplina
             // 
-            this.CBDisciplina.Font = new System.Drawing.Font("Arial Narrow", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.CBDisciplina.Font = new System.Drawing.Font("Arial Narrow", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.CBDisciplina.FormattingEnabled = true;
             this.CBDisciplina.Items.AddRange(new object[] {
             "1 - MATEMÁTICA DISCRETA",
             "2 - LÓGICA",
             "3 - ALGORITMO"});
-            this.CBDisciplina.Location = new System.Drawing.Point(128, 125);
+            this.CBDisciplina.Location = new System.Drawing.Point(128, 100);
+            this.CBDisciplina.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CBDisciplina.Name = "CBDisciplina";
             this.CBDisciplina.Size = new System.Drawing.Size(197, 24);
             this.CBDisciplina.TabIndex = 9;
+            this.CBDisciplina.SelectedIndexChanged += new System.EventHandler(this.CBDisciplina_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Lucida Handwriting", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label4.Location = new System.Drawing.Point(18, 237);
+            this.label4.Location = new System.Drawing.Point(18, 190);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 20);
+            this.label4.Size = new System.Drawing.Size(0, 18);
             this.label4.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lucida Handwriting", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.label6.Location = new System.Drawing.Point(6, 128);
+            this.label6.Location = new System.Drawing.Point(6, 102);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 20);
+            this.label6.Size = new System.Drawing.Size(81, 18);
             this.label6.TabIndex = 11;
             this.label6.Text = "Disciplina";
             // 
@@ -152,11 +157,12 @@ namespace Teste2
             // 
             this.gridBoletim.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.gridBoletim.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridBoletim.Location = new System.Drawing.Point(18, 247);
+            this.gridBoletim.Location = new System.Drawing.Point(18, 198);
+            this.gridBoletim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridBoletim.Name = "gridBoletim";
             this.gridBoletim.RowHeadersWidth = 51;
             this.gridBoletim.RowTemplate.Height = 29;
-            this.gridBoletim.Size = new System.Drawing.Size(760, 149);
+            this.gridBoletim.Size = new System.Drawing.Size(760, 119);
             this.gridBoletim.TabIndex = 12;
             // 
             // groupBox1
@@ -169,12 +175,14 @@ namespace Teste2
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtNota1);
             this.groupBox1.Controls.Add(this.txtNota2);
-            this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.groupBox1.ForeColor = System.Drawing.Color.Red;
             this.groupBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.groupBox1.Location = new System.Drawing.Point(18, 51);
+            this.groupBox1.Location = new System.Drawing.Point(18, 41);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(349, 174);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(349, 139);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Notas Oficiais";
@@ -182,17 +190,17 @@ namespace Teste2
             // lbStatus
             // 
             this.lbStatus.AutoSize = true;
-            this.lbStatus.Location = new System.Drawing.Point(92, 122);
+            this.lbStatus.Location = new System.Drawing.Point(92, 98);
             this.lbStatus.Name = "lbStatus";
-            this.lbStatus.Size = new System.Drawing.Size(0, 27);
+            this.lbStatus.Size = new System.Drawing.Size(0, 29);
             this.lbStatus.TabIndex = 9;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(185, 128);
+            this.label9.Location = new System.Drawing.Point(185, 102);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 27);
+            this.label9.Size = new System.Drawing.Size(0, 29);
             this.label9.TabIndex = 8;
             // 
             // groupBox2
@@ -204,51 +212,57 @@ namespace Teste2
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.CBDisciplina);
-            this.groupBox2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.groupBox2.ForeColor = System.Drawing.Color.MediumTurquoise;
             this.groupBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.groupBox2.Location = new System.Drawing.Point(439, 51);
+            this.groupBox2.Location = new System.Drawing.Point(439, 41);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(339, 174);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(339, 139);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Aluno Informações";
             // 
             // txtRA
             // 
-            this.txtRA.Location = new System.Drawing.Point(93, 32);
+            this.txtRA.Location = new System.Drawing.Point(93, 26);
+            this.txtRA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRA.Mask = "00000";
             this.txtRA.Name = "txtRA";
             this.txtRA.Size = new System.Drawing.Size(232, 34);
             this.txtRA.TabIndex = 15;
             this.txtRA.ValidatingType = typeof(int);
+            this.txtRA.TextChanged += new System.EventHandler(this.txtRA_TextChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Lucida Handwriting", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Fuchsia;
-            this.label8.Location = new System.Drawing.Point(6, 41);
+            this.label8.Location = new System.Drawing.Point(6, 33);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 20);
+            this.label8.Size = new System.Drawing.Size(30, 18);
             this.label8.TabIndex = 14;
             this.label8.Text = "RA";
             // 
             // txtAluno
             // 
-            this.txtAluno.Location = new System.Drawing.Point(93, 74);
+            this.txtAluno.Location = new System.Drawing.Point(93, 59);
+            this.txtAluno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAluno.Name = "txtAluno";
             this.txtAluno.Size = new System.Drawing.Size(232, 34);
             this.txtAluno.TabIndex = 13;
+            this.txtAluno.TextChanged += new System.EventHandler(this.txtAluno_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Lucida Handwriting", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Fuchsia;
-            this.label7.Location = new System.Drawing.Point(6, 81);
+            this.label7.Location = new System.Drawing.Point(6, 65);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 20);
+            this.label7.Size = new System.Drawing.Size(50, 18);
             this.label7.TabIndex = 12;
             this.label7.Text = "Aluno";
             // 
@@ -260,11 +274,13 @@ namespace Teste2
             this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.gridBoletim);
-            this.groupBox3.Font = new System.Drawing.Font("Lucida Handwriting", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.groupBox3.ForeColor = System.Drawing.Color.ForestGreen;
-            this.groupBox3.Location = new System.Drawing.Point(12, 93);
+            this.groupBox3.Location = new System.Drawing.Point(12, 74);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(800, 482);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(800, 386);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Resultados";
@@ -272,9 +288,10 @@ namespace Teste2
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(18, 420);
+            this.button1.Location = new System.Drawing.Point(18, 336);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 44);
+            this.button1.Size = new System.Drawing.Size(157, 35);
             this.button1.TabIndex = 15;
             this.button1.Text = "Salvar";
             this.button1.UseVisualStyleBackColor = true;
@@ -282,12 +299,13 @@ namespace Teste2
             // 
             // FrmBoletim
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(837, 587);
+            this.ClientSize = new System.Drawing.Size(837, 470);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label5);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmBoletim";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Boletim";
