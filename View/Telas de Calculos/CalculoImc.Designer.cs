@@ -43,7 +43,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(252, 164);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 17);
+            this.label1.Size = new System.Drawing.Size(104, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Digite seu peso:";
             // 
@@ -52,7 +52,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(252, 224);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 17);
+            this.label2.Size = new System.Drawing.Size(107, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Digite sua Altura:";
             // 
@@ -61,7 +61,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(474, 161);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 17);
+            this.label3.Size = new System.Drawing.Size(25, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "KG";
             // 
@@ -70,7 +70,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(474, 224);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 17);
+            this.label4.Size = new System.Drawing.Size(41, 16);
             this.label4.TabIndex = 4;
             this.label4.Text = "M e C";
             // 
@@ -93,7 +93,7 @@
             this.label5.ForeColor = System.Drawing.Color.Red;
             this.label5.Location = new System.Drawing.Point(297, 44);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(221, 32);
+            this.label5.Size = new System.Drawing.Size(220, 32);
             this.label5.TabIndex = 7;
             this.label5.Text = "Calcule seu IMC";
             // 
@@ -126,6 +126,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CalculoImc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculo do IMC";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CalculoImc_FormClosing);
             this.ResumeLayout(false);

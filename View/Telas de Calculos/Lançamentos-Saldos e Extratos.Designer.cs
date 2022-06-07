@@ -1,6 +1,6 @@
 ﻿namespace View.Telas_de_Calculos
 {
-    partial class Lançamentos_Saldos_e_Extratos
+    partial class FrmLancamentos_Saldos_e_Extratos
     {
         /// <summary>
         /// Required designer variable.
@@ -87,7 +87,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(12, 40);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 17);
+            this.label3.Size = new System.Drawing.Size(60, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Agência:";
             // 
@@ -97,7 +97,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(18, 127);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 17);
+            this.label4.Size = new System.Drawing.Size(51, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Cliente:";
             // 
@@ -107,7 +107,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(18, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 17);
+            this.label1.Size = new System.Drawing.Size(45, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Conta:";
             // 
@@ -128,6 +128,7 @@
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.dataGridView1.Location = new System.Drawing.Point(6, 21);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(748, 365);
             this.dataGridView1.TabIndex = 0;
@@ -172,7 +173,7 @@
             this.guna2Button6.TabIndex = 11;
             this.guna2Button6.Text = "Buscar Conta";
             // 
-            // Lançamentos_Saldos_e_Extratos
+            // FrmLancamentos_Saldos_e_Extratos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,7 +182,8 @@
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Lançamentos_Saldos_e_Extratos";
+            this.Name = "FrmLancamentos_Saldos_e_Extratos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lançamentos_Saldos_e_Extratos";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

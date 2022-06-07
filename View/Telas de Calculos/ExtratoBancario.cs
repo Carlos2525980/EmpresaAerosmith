@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace View.Telas_de_Calculos
 {
-    public partial class FrmLancamentos_Saldos_e_Extratos : Form
+    public partial class FrmExtratoBancario : Form
     {
-        public FrmLancamentos_Saldos_e_Extratos()
+        public FrmExtratoBancario()
         {
             InitializeComponent();
+        }
+
+        private void FrmExtratoBancario_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FrmDepoistos deposito = new FrmDepoistos();
+            deposito.Show();
         }
     }
 }

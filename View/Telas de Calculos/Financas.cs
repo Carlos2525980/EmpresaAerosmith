@@ -11,9 +11,9 @@ using View.Telas_de_Cadastro;
 
 namespace View.Telas_de_Calculos
 {
-    public partial class Financas : Form
+    public partial class FrmFinancas : Form
     {
-        public Financas()
+        public FrmFinancas()
         {
             InitializeComponent();
         }
@@ -22,6 +22,19 @@ namespace View.Telas_de_Calculos
         {
             CadastroClientesBanco cadastro = new CadastroClientesBanco();
             cadastro.Show();
+        }
+
+        private void depositosESaquesToolStripMenuItem_Click(object sender, EventArgs e)
+        {                       
+
+            FrmDepoistos deposito = new FrmDepoistos();
+            deposito.Show();
+        }
+
+        private void lançamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLancamentos_Saldos_e_Extratos lancamentos = new FrmLancamentos_Saldos_e_Extratos();
+            lancamentos.Show();
         }
     }
 }
