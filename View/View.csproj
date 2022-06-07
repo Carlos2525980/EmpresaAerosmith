@@ -226,6 +226,12 @@
     <Compile Include="Telas de Cadastro\CadastroClientesBanco.Designer.cs">
       <DependentUpon>CadastroClientesBanco.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas de Cadastro\CadastroprodutosCelinhaloja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas de Cadastro\CadastroprodutosCelinhaloja.Designer.cs">
+      <DependentUpon>CadastroprodutosCelinhaloja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas de Cadastro\FrmCadastroImoveis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas de Cadastro\CadastroClientesBanco.resx">
       <DependentUpon>CadastroClientesBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas de Cadastro\CadastroprodutosCelinhaloja.resx">
+      <DependentUpon>CadastroprodutosCelinhaloja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas de Cadastro\FrmCadastroImoveis.resx">
       <DependentUpon>FrmCadastroImoveis.cs</DependentUpon>
