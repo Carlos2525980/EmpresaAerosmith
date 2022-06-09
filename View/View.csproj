@@ -109,6 +109,7 @@
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.8.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MvcCheckBoxList, Version=1.4.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MvcCheckBoxList.1.4.5\lib\net45\MvcCheckBoxList.dll</HintPath>
     </Reference>
@@ -226,11 +227,11 @@
     <Compile Include="Telas de Cadastro\CadastroClientesBanco.Designer.cs">
       <DependentUpon>CadastroClientesBanco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas de Cadastro\CadastroprodutosCelinhaloja.cs">
+    <Compile Include="Telas de Cadastro\FrmCadastroprodutosCelinhaloja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas de Cadastro\CadastroprodutosCelinhaloja.Designer.cs">
-      <DependentUpon>CadastroprodutosCelinhaloja.cs</DependentUpon>
+    <Compile Include="Telas de Cadastro\FrmCadastroprodutosCelinhaloja.Designer.cs">
+      <DependentUpon>FrmCadastroprodutosCelinhaloja.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas de Cadastro\FrmCadastroImoveis.cs">
       <SubType>Form</SubType>
@@ -309,8 +310,8 @@
     <EmbeddedResource Include="Telas de Cadastro\CadastroClientesBanco.resx">
       <DependentUpon>CadastroClientesBanco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas de Cadastro\CadastroprodutosCelinhaloja.resx">
-      <DependentUpon>CadastroprodutosCelinhaloja.cs</DependentUpon>
+    <EmbeddedResource Include="Telas de Cadastro\FrmCadastroprodutosCelinhaloja.resx">
+      <DependentUpon>FrmCadastroprodutosCelinhaloja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas de Cadastro\FrmCadastroImoveis.resx">
       <DependentUpon>FrmCadastroImoveis.cs</DependentUpon>

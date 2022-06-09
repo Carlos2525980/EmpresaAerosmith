@@ -88,5 +88,11 @@ namespace View
             FrmBoletim boletin = new FrmBoletim();
             boletin.Show();
         }
+
+        private void cadastroDeProdutosCelinhaLojasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCadastroprodutosCelinhaloja celinha = new FrmCadastroprodutosCelinhaloja();
+            celinha.Show();
+        }
     }
 }

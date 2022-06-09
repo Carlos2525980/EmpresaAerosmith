@@ -34,11 +34,12 @@
             this.cadastroJardimBotânicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroDeImóveisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.boletimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controllersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calcularIMCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.finançasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilitáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.boletimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeProdutosCelinhaLojasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +64,8 @@
             this.cadastroJardimBotânicoToolStripMenuItem,
             this.cadastroClientesToolStripMenuItem,
             this.cadastroDeImóveisToolStripMenuItem,
-            this.boletimToolStripMenuItem});
+            this.boletimToolStripMenuItem,
+            this.cadastroDeProdutosCelinhaLojasToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
             this.cadastrosToolStripMenuItem.Text = "1 - Cadastros";
@@ -71,30 +73,37 @@
             // cadastroDeAssociadosToolStripMenuItem
             // 
             this.cadastroDeAssociadosToolStripMenuItem.Name = "cadastroDeAssociadosToolStripMenuItem";
-            this.cadastroDeAssociadosToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
+            this.cadastroDeAssociadosToolStripMenuItem.Size = new System.Drawing.Size(348, 26);
             this.cadastroDeAssociadosToolStripMenuItem.Text = "1 - Cadastro de Associados";
             this.cadastroDeAssociadosToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeAssociadosToolStripMenuItem_Click);
             // 
             // cadastroJardimBotânicoToolStripMenuItem
             // 
             this.cadastroJardimBotânicoToolStripMenuItem.Name = "cadastroJardimBotânicoToolStripMenuItem";
-            this.cadastroJardimBotânicoToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
+            this.cadastroJardimBotânicoToolStripMenuItem.Size = new System.Drawing.Size(348, 26);
             this.cadastroJardimBotânicoToolStripMenuItem.Text = "2 - Cadastro Jardim Botânico";
             this.cadastroJardimBotânicoToolStripMenuItem.Click += new System.EventHandler(this.cadastroJardimBotânicoToolStripMenuItem_Click);
             // 
             // cadastroClientesToolStripMenuItem
             // 
             this.cadastroClientesToolStripMenuItem.Name = "cadastroClientesToolStripMenuItem";
-            this.cadastroClientesToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
+            this.cadastroClientesToolStripMenuItem.Size = new System.Drawing.Size(348, 26);
             this.cadastroClientesToolStripMenuItem.Text = "3 - Cadastro Clientes";
             this.cadastroClientesToolStripMenuItem.Click += new System.EventHandler(this.cadastroClientesToolStripMenuItem_Click);
             // 
             // cadastroDeImóveisToolStripMenuItem
             // 
             this.cadastroDeImóveisToolStripMenuItem.Name = "cadastroDeImóveisToolStripMenuItem";
-            this.cadastroDeImóveisToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
+            this.cadastroDeImóveisToolStripMenuItem.Size = new System.Drawing.Size(348, 26);
             this.cadastroDeImóveisToolStripMenuItem.Text = "4 - Cadastro de Imóveis";
             this.cadastroDeImóveisToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeImóveisToolStripMenuItem_Click);
+            // 
+            // boletimToolStripMenuItem
+            // 
+            this.boletimToolStripMenuItem.Name = "boletimToolStripMenuItem";
+            this.boletimToolStripMenuItem.Size = new System.Drawing.Size(348, 26);
+            this.boletimToolStripMenuItem.Text = "5 - Boletim";
+            this.boletimToolStripMenuItem.Click += new System.EventHandler(this.boletimToolStripMenuItem_Click);
             // 
             // controllersToolStripMenuItem
             // 
@@ -108,14 +117,14 @@
             // calcularIMCToolStripMenuItem
             // 
             this.calcularIMCToolStripMenuItem.Name = "calcularIMCToolStripMenuItem";
-            this.calcularIMCToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.calcularIMCToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
             this.calcularIMCToolStripMenuItem.Text = "Calcular IMC";
             this.calcularIMCToolStripMenuItem.Click += new System.EventHandler(this.calcularIMCToolStripMenuItem_Click);
             // 
             // finançasToolStripMenuItem
             // 
             this.finançasToolStripMenuItem.Name = "finançasToolStripMenuItem";
-            this.finançasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.finançasToolStripMenuItem.Size = new System.Drawing.Size(175, 26);
             this.finançasToolStripMenuItem.Text = "Finanças";
             this.finançasToolStripMenuItem.Click += new System.EventHandler(this.finançasToolStripMenuItem_Click);
             // 
@@ -125,12 +134,12 @@
             this.utilitáriosToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
             this.utilitáriosToolStripMenuItem.Text = "3 - Utilitários ";
             // 
-            // boletimToolStripMenuItem
+            // cadastroDeProdutosCelinhaLojasToolStripMenuItem
             // 
-            this.boletimToolStripMenuItem.Name = "boletimToolStripMenuItem";
-            this.boletimToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
-            this.boletimToolStripMenuItem.Text = "5 - Boletim";
-            this.boletimToolStripMenuItem.Click += new System.EventHandler(this.boletimToolStripMenuItem_Click);
+            this.cadastroDeProdutosCelinhaLojasToolStripMenuItem.Name = "cadastroDeProdutosCelinhaLojasToolStripMenuItem";
+            this.cadastroDeProdutosCelinhaLojasToolStripMenuItem.Size = new System.Drawing.Size(348, 26);
+            this.cadastroDeProdutosCelinhaLojasToolStripMenuItem.Text = "6 - Cadastro de Produtos Celinha Lojas";
+            this.cadastroDeProdutosCelinhaLojasToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeProdutosCelinhaLojasToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -165,5 +174,6 @@
         private System.Windows.Forms.ToolStripMenuItem calcularIMCToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem finançasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem boletimToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroDeProdutosCelinhaLojasToolStripMenuItem;
     }
 }
